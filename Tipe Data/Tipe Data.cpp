@@ -11,33 +11,32 @@ float nilai;
 bool hasil, hasil2;
 double a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p;
 
-
 void program(){
 	
 	system("cls");
 
 	cout << "\nMasukan Prodi  [Inisial]\t>> "	; cin >> prodi;
 	cout << "\nMasukan Angkatan [Tahun]\t>> "	; cin >> angkatan;
-	cout << "\nMasukan NIM\t\t\t>> "			; cin >> nim;
+	cout << "\nMasukan NIM\t\t\t>> "		; cin >> nim;
 	
 	system("cls");
 	
 	cout << "\nmasukan Nilai Bahasa Pemrograman"				<< "\t\t\t>> "	; cin >> a;
 	cout << "\nmasukan Nilai Elektronika Terintegrasi"			<< "\t\t\t>> "	; cin >> b;
-	cout << "\nmasukan Nilai Fisika Lanjut"						<< "\t\t\t\t>> "; cin >> c;
+	cout << "\nmasukan Nilai Fisika Lanjut"					<< "\t\t\t\t>> "; cin >> c;
 	cout << "\nmasukan Nilai Ilmu Kesehatan Masyarakat"			<< "\t\t\t>> "	; cin >> d;
-	cout << "\nmasukan Nilai Instalasi Listrik"					<< "\t\t\t\t>> "; cin >> e;
-	cout << "\nmasukan Nilai Kewarganegaraan"					<< "\t\t\t\t>> "; cin >> f;
-	cout << "\nmasukan Nilai Kewirausahaan"						<< "\t\t\t\t>> "; cin >> g;
+	cout << "\nmasukan Nilai Instalasi Listrik"				<< "\t\t\t\t>> "; cin >> e;
+	cout << "\nmasukan Nilai Kewarganegaraan"				<< "\t\t\t\t>> "; cin >> f;
+	cout << "\nmasukan Nilai Kewirausahaan"					<< "\t\t\t\t>> "; cin >> g;
 	cout << "\nmasukan Nilai Sensor dan Tranduser"				<< "\t\t\t>> "	; cin >> h;
-	cout << "\nmasukan Nilai Teknik Digital"					<< "\t\t\t\t>> "; cin >> i;
+	cout << "\nmasukan Nilai Teknik Digital"				<< "\t\t\t\t>> "; cin >> i;
 	cout << "\nmasukan Nilai Teknik Tenaga Listrik"				<< "\t\t\t>> "	; cin >> j;
-	cout << "\nmasukan Nilai Praktikum Bahasa Pemrograman"		<< "\t\t>> "	; cin >> k;
-	cout << "\nmasukan Nilai Praktikum Elektronika Terintegrasi"<< "\t>> "		; cin >> l;
+	cout << "\nmasukan Nilai Praktikum Bahasa Pemrograman"			<< "\t\t>> "	; cin >> k;
+	cout << "\nmasukan Nilai Praktikum Elektronika Terintegrasi"		<< "\t>> "	; cin >> l;
 	cout << "\nmasukan Nilai Praktikum Fisika Lanjut"			<< "\t\t\t>> "	; cin >> m;
-	cout << "\nmasukan Nilai Praktikum Instalasi Listrik"		<< "\t\t>> "	; cin >> n;
+	cout << "\nmasukan Nilai Praktikum Instalasi Listrik"			<< "\t\t>> "	; cin >> n;
 	cout << "\nmasukan Nilai Praktikum Teknik Digital"			<< "\t\t\t>> "	; cin >> o;
-	cout << "\nmasukan Nilai Praktikum Teknik Tenaga Listrik"	<< "\t\t>> "	; cin >> p;
+	cout << "\nmasukan Nilai Praktikum Teknik Tenaga Listrik"		<< "\t\t>> "	; cin >> p;
 	
 	nilai = ((a + b + c + d + e + f + g + h + i + j + k + l + m + n +  o + p) / 16);
 	
@@ -48,8 +47,6 @@ void program(){
 	cout << "\t-NIM\t: " << nim;
 	cout << "\t-PRODI\t: " << prodi;
 	cout << "\t-ANGKATAN\t: " << angkatan << "\n\n";
-	
-	
 	
 	if (nilai <= 40.09){
 		cout << "Anda Mendapatkan Predikat E dengan Nilai\t: "	<< nilai << "\n";
