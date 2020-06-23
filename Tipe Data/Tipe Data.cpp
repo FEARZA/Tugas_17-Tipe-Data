@@ -1,26 +1,26 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 using namespace std;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 string nama, prodi, nim;
 char pilihan;
 int angkatan;
 float nilai;
 bool hasil, hasil2;
 double a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 void program(){
 	
 	system("cls");
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	cout << "\nMasukan Prodi  [Inisial]\t>> "	; cin >> prodi;
 	cout << "\nMasukan Angkatan [Tahun]\t>> "	; cin >> angkatan;
 	cout << "\nMasukan NIM\t\t\t>> "		; cin >> nim;
 	
 	system("cls");
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	cout << "\nmasukan Nilai Bahasa Pemrograman"				<< "\t\t\t>> "	; cin >> a;
 	cout << "\nmasukan Nilai Elektronika Terintegrasi"			<< "\t\t\t>> "	; cin >> b;
 	cout << "\nmasukan Nilai Fisika Lanjut"					<< "\t\t\t\t>> "; cin >> c;
@@ -37,17 +37,17 @@ void program(){
 	cout << "\nmasukan Nilai Praktikum Instalasi Listrik"			<< "\t\t>> "	; cin >> n;
 	cout << "\nmasukan Nilai Praktikum Teknik Digital"			<< "\t\t\t>> "	; cin >> o;
 	cout << "\nmasukan Nilai Praktikum Teknik Tenaga Listrik"		<< "\t\t>> "	; cin >> p;
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	nilai = ((a + b + c + d + e + f + g + h + i + j + k + l + m + n +  o + p) / 16);
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	hasil2 = nilai <= 70.09;
 	hasil = nilai >= 70.09;
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	cout << "\n\n-NAMA\t: " << nama;
 	cout << "\t-NIM\t: " << nim;
 	cout << "\t-PRODI\t: " << prodi;
 	cout << "\t-ANGKATAN\t: " << angkatan << "\n\n";
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	if (nilai <= 40.09){
 		cout << "Anda Mendapatkan Predikat E dengan Nilai\t: "	<< nilai << "\n";
 	}else if (nilai <= 54.09){
@@ -65,7 +65,7 @@ void program(){
 	}else{
 		cout << "pilihan anda tidak valid!\n";
 	}
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	if (hasil){
 		cout << "\nAnda Lulus\n";
 	}
@@ -73,7 +73,7 @@ void program(){
 		cout << "\nAnda Tidak Lulus\n";
 	}
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 int main(){
 	
 	cout << "Selamat Datang, Siapa Nama Anda ?\t>> "; getline (cin, nama);
@@ -81,7 +81,7 @@ int main(){
 	
 	awal :
 		cout << "Halo, ' " << nama << " ' Apakah anda ingin memeriksa nilai ? [Y / N]\t>> "; cin >> pilihan;
-	
+////////////////////////////////////////////////////////////////////////////////////////////////////
 	while(true){
 		
 		if (pilihan == 'y' || pilihan == 'Y'){
